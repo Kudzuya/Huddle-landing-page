@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(bg-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.register {
+    margin-top: 5%;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.register:hover {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+}
+
+.icons {
+    margin-top: 66%;
+    margin-right: 5%;
+    color: white;
+    width: 35px;
+}
+
+.icons:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+main {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    width: 1220px;
+    height: 500px;
+}
+
+.left {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.right {
+    width: 1150px;
+
+}
+
+header {
+    height: 20%;
+}
+
+.middle {
+    height: 30%;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+}
+
+/* My info */
+.kudzuya {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: hsl(300, 69%, 71%);
+    font-size: 20px;
+}
+
+.kudzuya a {
+    color: hsl(300, 69%, 71%);
+    font-size: 20px;
+    transition: 0.5;
+}
+
+.kudzuya a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* My info ends*/
+
+/* mobile settings */
+@media screen and (max-width: 1000px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+    main {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: url(bg-mobile.svg);
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 90%;
+        display: block;
+    }
+    .right{
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{
+        height: 20%;
+        display: flex;
+        text-align: center;
+    }
+    h1{
+        font-size: 34px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        margin-top: 8%;
+    }
+    .middle{
+        height: 20%;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    footer{
+        margin-top: 22%;
+    }
+    .icons{
+        margin-top: 2%;
+    }
+    .mock{
+        width: 100%;
+    }
+    .register{
+        width: 60%;
+        margin-top: 9%;
+    }
+    .kudzuya {
+    position: relative;
+    top: 120px;
+    bottom: 0;
+    width: 100%;
+    }
+}
